@@ -1,4 +1,4 @@
-package com.example.bargraph
+package com.example.bargraph.ui
 
 
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.github.mikephil.charting.data.BarEntry
+import com.example.bargraph.R
 
 
 class GraphFragment : Fragment() {
