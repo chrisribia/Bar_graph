@@ -13,6 +13,7 @@ import androidx.room.RoomDatabase
 abstract  class AppDataBase : RoomDatabase(){
 
 
+    abstract fun getEmployeeDao(): EmployeeDao
 
     companion object {
 
