@@ -1,9 +1,10 @@
-package com.example.bargraph
+package com.example.bargraph.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
+import com.example.bargraph.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -11,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val navController = Navigation.findNavController(this,R.id.fragment)
+        val navController = Navigation.findNavController(this, R.id.fragment)
 
         NavigationUI.setupWithNavController(nav_view,navController)
 
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onSupportNavigateUp(): Boolean {
         return NavigationUI.navigateUp(
-            Navigation.findNavController(this,R.id.fragment),
+            Navigation.findNavController(this, R.id.fragment),
             drawer_layout
         )
     }
