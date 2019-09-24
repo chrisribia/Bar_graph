@@ -10,7 +10,7 @@ import retrofit2.http.GET
 interface MyApi {
 
     @GET("qr_codes.php")
-    suspend fun getEmployes() : Response<EmployeeResponse>
+    suspend fun getEmployee() : Response<EmployeeResponse>
     companion object{
         operator fun invoke(
             networkConnectionInterceptor: NetworkConnectionInterceptor
