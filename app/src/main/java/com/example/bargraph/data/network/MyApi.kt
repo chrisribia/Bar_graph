@@ -11,6 +11,8 @@ interface MyApi {
 
     @GET("qr_codes.php")
     suspend fun getEmployee() : Response<EmployeeResponse>
+
+
     companion object{
         operator fun invoke(
             networkConnectionInterceptor: NetworkConnectionInterceptor
@@ -19,10 +21,10 @@ interface MyApi {
             val okkHttpclient = OkHttpClient.Builder()
                 .addInterceptor(networkConnectionInterceptor)
                 .build()
-
             return Retrofit.Builder()
                 .client(okkHttpclient)
-                .baseUrl("https://localhost/graph/v1/")
+                .client(okkHttpclient)
+                .baseUrl("http://192.168.0.28/graph/v1/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(MyApi::class.java)

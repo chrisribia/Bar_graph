@@ -11,7 +11,4 @@ data class Employee(
     val designation: String,
     val city: String,
     val joiningDate: String,
-    val salary: String,
-    var image: String?,
-    var imageTime: String?
-)
+    val salary: String )

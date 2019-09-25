@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/graphFragment"
-        android:name="com.example.bargraph.ui.GraphFragment"
+        android:name="com.example.bargraph.ui.GraphFragment.GraphFragment"
         android:label="My Graph"
         tools:layout="@layout/fragment_graph" />
 </navigation>
