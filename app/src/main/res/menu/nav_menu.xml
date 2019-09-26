@@ -5,4 +5,9 @@
     android:id="@+id/GraphFragment"
     />
 
+    <item
+        android:title="Map"
+        android:id="@+id/mapFragment"
+        />
+
 </menu>
