@@ -10,4 +10,9 @@
         android:name="com.example.bargraph.ui.GraphFragment.GraphFragment"
         android:label="My Graph"
         tools:layout="@layout/fragment_graph" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.bargraph.ui.MapFragment.MapFragment"
+        android:label="map_fragment"
+        tools:layout="@layout/map_fragment" />
 </navigation>

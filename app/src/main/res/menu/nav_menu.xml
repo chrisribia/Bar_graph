@@ -2,7 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item
     android:title="Graph"
+    android:icon="@drawable/ic_graphic"
     android:id="@+id/GraphFragment"
     />
+
+    <item
+        android:title="Map"
+        android:icon="@drawable/ic_map"
+        android:id="@+id/mapFragment"
+        />
 
 </menu>
