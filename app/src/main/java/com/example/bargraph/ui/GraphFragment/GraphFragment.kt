@@ -22,6 +22,7 @@ import org.kodein.di.android.x.kodein
 import org.kodein.di.generic.instance
 
 import androidx.lifecycle.Observer
+import java.util.ArrayList
 
 
 class GraphFragment : Fragment(), KodeinAware {
@@ -54,10 +55,9 @@ class GraphFragment : Fragment(), KodeinAware {
 
     private fun showBarChart( employee: List<Employee>) {
 
-                val entries = mutableListOf<BarEntry>()
-                     var x = 0
+        val entries = mutableListOf<BarEntry>()
+        var x = 0
                     employee.forEach {
-
                         entries.add(
                             BarEntry(
                                 x.toFloat(),
@@ -68,9 +68,8 @@ class GraphFragment : Fragment(), KodeinAware {
                     }
 
 
-
-            val barData = BarData(BarDataSet(entries, "Salaries"))
-            chart.data = barData
+        val barData = BarData(BarDataSet(entries, "Salaries"))
+        chart.data = barData
         chart.animateY(5000)
 
     }
