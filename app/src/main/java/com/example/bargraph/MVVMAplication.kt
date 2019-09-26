@@ -8,6 +8,7 @@ import com.example.bargraph.data.db.Entity.Employee
 import com.example.bargraph.data.network.MyApi
 import com.example.bargraph.data.network.NetworkConnectionInterceptor
 import com.example.bargraph.ui.GraphFragment.GraphViewModelFactory
+import com.example.bargraph.ui.MapFragment.MapViewModelFactory
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.x.androidXModule
@@ -26,6 +27,7 @@ class MVVMAplication: Application(), KodeinAware {
         bind() from singleton { AppDataBase(instance()) }
         bind() from singleton { EmployeeRepository(instance(), instance()) }
         bind() from provider { GraphViewModelFactory(instance()) }
+        bind() from provider { MapViewModelFactory(instance()) }
 
 
     }
