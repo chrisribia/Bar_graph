@@ -2,6 +2,7 @@ package com.example.bargraph.ui.MapFragment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.bargraph.R
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
